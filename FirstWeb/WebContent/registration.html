@@ -1,67 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
 <title>Registration Page</title>
+<h1 align="center">Registration Page</h1>
 </head>
-<body bgcolor="black" style="color:white">
-<center>
-<font size="+20">Registration Page</font>
-</center>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<form align="center" action="process.php" method="POST">
-<div>
-<label>First name</label>
-<input type="text" name="First-name">
-</div>
-<br>
-<br>
-<div>
-<label>Last name</label>
-<input type="text" name="Last-name">
-</div>
-<br>
-<br>
-<div>
-<label>Email</label>
-<input type="text" name="Email">
-</div>
-<br>
-<br>
-<div>
-<label>Password</label>
-<input type="text" name="Password">
-</div>
-<br>
-<br>
-<div>
-<label>Confirm Password</label>
-<input type="text" name="Confirm Password">
-</div>
-<br>
-<br>
-<label>Gender</label>
-<select name="Gender">
-<option value="Male">Male</option>
-<option value="Female">Female</option>
-<option value="Other">Other</option>
-</select>
-<br>
-<br>
-<div>
-<label>Age </label>
-<input type="number" name="Age" value="">
-</div>
-<br>
-<br>
-<input type="submit" name="submit" value="Cancel">
-<input type="submit" name="submit" value="Register" >
-</html>
+<body bgcolor="FFC0CB">
+	<form align="center" action="Registration">
+		<table align="center">
+			<tr>
+				<td>First name</td>
+				<td><input type="text" name="fname"></td>
+			<tr>
+				<td><label>Last name</label></td>
+				<td><input type="text" name="lname"></td>
+			</tr>
+			<tr>
+				<td><label>Email</label></td>
+				<td><input type="text" name="email"></td>
+			</tr>
+			<tr>
+				<td><label>DOB</label></td>
+				<td><input type="text" name="dob"></td>
+			</tr>
+			<tr>
+				<td><label>PhNo</label></td>
+				<td><input type="text" name="phno"></td>
+			</tr>
+			<tr>
+				<td>
+			<tr>
+				<td><label>Password</label></td>
+				<td><input type="Password" name="Password"></td>
+			</tr>
+			<tr>
+				<td><label>Confirm Password</label></td>
+				<td><input type="Password" name="ConfirmPassword"></td>
+			</tr>
+			<tr>
+				<td colspan='2'>
+					<fieldset>
+						<legend>Gender</legend>
+						<input type="radio" name="g1" value="Male">Male<br> <input
+							type="radio" name="g1" value="Female">Female<br> <input
+							type="radio" name="g1" value="Others">Others
+					</fieldset>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Age </label></td>
+				<td><input type="number" name="Age" value=""></td>
+			</tr>		
+			<tr>
+				<td><input type="reset" name="reset" value="Cancel"></td>
+				<td><input type="submit" name="submit" value="Register"></td>
+			</tr>
+		</table>
+	</form>
 </body>
 </html>
